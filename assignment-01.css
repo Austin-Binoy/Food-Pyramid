@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #080930;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #051129;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 30px;
+  color: rgb(255, 102, 0);
+  text-decoration: none;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+}
+
+.triangle {
+  padding-top: 100px;
+  margin: 2rem 0;
+  padding-bottom: 30px;
+}
+
+.shape {
+  margin: auto;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+
+
+.one {
+	width: 0;
+	height: 0;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-bottom: 100px solid #9E9E9E;
+  
+}
+.one:hover {
+  transform: scale(1.7);
+  border-bottom: 100px solid #0c5066;			
+
+}
+
+
+
+.two {
+	border-bottom: 120px solid #6CC9EA;
+	border-left: 80px solid transparent;
+	border-right: 80px solid transparent;
+	height: 0;
+	width: 140px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.two:hover {
+	border-bottom: 120px solid #4c2dbd;			
+  transform: scale(1.27);
+}
+.three {
+	border-bottom: 120px solid #ffdc41;
+	border-left: 80px solid transparent;
+	border-right: 80px solid transparent;
+	height: 0;
+	width: 320px;
+}
+.three:hover {
+	border-bottom: 120px solid #7a6c18;			
+  transform: scale(1.18);
+}
+.four {
+	width: 0;
+	height: 0;
+	border-bottom: 120px solid #ff2e2e;
+	border-left: 80px solid transparent;
+	border-right: 80px solid transparent;
+    width: 480px;
+}
+.four:hover {
+	border-bottom: 120px solid #5e1212;			
+  transform: scale(1.14);
+}
+.five {
+	border-bottom: 120px solid #ff4593;
+	border-left: 80px solid transparent;
+	border-right: 80px solid transparent;
+	height: 0;
+	width: 640px;
+}
+.five:hover {
+	border-bottom: 120px solid #611f5e;		
+  transform: scale(1.1);
+	
+}
+.six {
+	border-bottom: 120px solid #6cea81;
+	border-left: 80px solid transparent;
+	border-right: 80px solid transparent;
+	height: 0;
+	width: 800px;
+}
+.six:hover {
+	border-bottom: 120px solid #0e381f;			
+  transform: scale(1.1);
+
+}
+
+
+
+
+.triangle-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* This should vertically center the buttons */
+  padding-bottom: 50px;
+}
+
+.triangle-btn {
+  font-size: 2rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  color: rgb(255, 153, 0);
+  margin: 0 1rem;
+    cursor: pointer;
+  outline: 0;
+  transition: opacity 0.4s ease-out;
+}
+
+.triangle-btn::after {
+  content: "";
+  display: block;
+  height: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(255, 153, 0);
+  margin-top: 0.5rem;
+  width: 0;
+  transition: width 0.4s ease-out;
+}
+
+.triangle-btn:hover::after {
+  width: 100%;
+}
+
+.triangle-btn:hover {
+  opacity: 0.8;
+}
+
+.active-btn {
+  color: #ffffff;
+}
+
+
+
+
+
+.shape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shape button, .shape input[type="text"] { 
+  margin: 10px 0; /* Adjust margin-top to bring them down */
+}
+
+.shape {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+}
+
+.shape button,
+.shape input[type="text"] { 
+  margin: 0; /* Reset margin */
+}
+
+.shape button { 
+  margin-top: 50px; /* Adjust margin-top to bring buttons down */
+  width: 60px; /* Sets a specific width for the buttons */
+  height: 25px;
+  font-size: 1em; /* Adjust font size as needed */
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 2px 5px;
+  background: transparent;
+  box-shadow: inset -2px -2px 2px rgba(255, 255, 255, .2),
+              inset 2px 2px 2px rgba(0, 0, 0, .8);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.shape:hover button {
+  opacity: 1; /* Display the buttons when the shape is hovered over */
+}
+.qtyBox
+{
+  width: 30px;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 24px;
+  color: white;
+}
+
+.shape input[type="text"] {
+  width: 30px; /* Adjust width as needed */
+  text-align: center;
+  margin-top: 53px;
+}
+
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+@keyframes slideRight {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes slideTop {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes slideBottom {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes updown {
+    0% {
+      transform: translateY(-15%);
+    }
+  
+    50% {
+      transform: translateY(15%);
+    }
+  
+    100% {
+      transform: translateY(-15%);
+    }
+  }
